@@ -1,0 +1,11 @@
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/bin/Debug/netcoreapp2.2/StudentExercises.deps.json
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/bin/Debug/netcoreapp2.2/StudentExercises.runtimeconfig.json
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/bin/Debug/netcoreapp2.2/StudentExercises.runtimeconfig.dev.json
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/bin/Debug/netcoreapp2.2/StudentExercises.dll
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/bin/Debug/netcoreapp2.2/StudentExercises.pdb
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.csprojAssemblyReference.cache
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.csproj.CoreCompileInputs.cache
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.AssemblyInfoInputs.cache
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.AssemblyInfo.cs
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.dll
+/alidhobey/programming/nss/cohort31/Exercise/StudentExercises/obj/Debug/netcoreapp2.2/StudentExercises.pdb
