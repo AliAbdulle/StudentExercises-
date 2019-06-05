@@ -3,38 +3,30 @@ using StudentExercise;
 
 namespace StudentExercises
 {
-    public class Instructor
+    class Instructor
     {
-        private string v1;
-        private string v2;
-        private Cohort cohort1;
 
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Specialty { get; set; }
         public string SlackHandle { get; set; }
-        public StudentExercise.Cohort CohortName { get; set; }
+        public string Cohort { get; set; }
 
-        public void AssignStudents(StudentExercise.Cohort cohort, Exercise exercise)
+        public void AssignExercise(Student student, Exercise exercise)
         {
-            foreach (Student student in cohort.studentList)
-            {
-                student.ExerciseList.Add(exercise);
-            }
+            student.ExerciseList.Add(exercise);
+            exercise.StudentList.Add(student);
         }
-        public Instructor(string firstName, string lastName, string slackHandle, Cohort cohortName)
+
+        public Instructor(string firstName, string lastName, string specialty, int id)
         {
             FirstName = firstName;
             LastName = lastName;
-            SlackHandle = slackHandle;
-            CohortName = cohortName;
+            Specialty = specialty;
+            Id = id;
         }
 
-        public Instructor(string v1, string v2, Cohort cohort1)
-        {
-            this.v1 = v1;
-            this.v2 = v2;
-            this.cohort1 = cohort1;
-        }
     }
 
 }

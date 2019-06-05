@@ -1,14 +1,42 @@
 using System;
-namespace StudentExercises{
+using System.Collections.Generic;
 
-public class Exercise {
-    public Exercise(string exerciseName, string exerciseType)
+namespace StudentExercises
+{
+
+    public class Exercise
     {
-        ExerciseName = exerciseName;
-        ExerciseType = exerciseType;
+        public Exercise(string exerciseName, string exerciseType, int id)
+        {
+            ExerciseName = exerciseName;
+            ExerciseType = exerciseType;
+            Id = id;
 
+
+        }
+        public int Id { get; set; }
+        public string ExerciseName { get; set; }
+        public string ExerciseType { get; set; }
+        public List<Student> StudentList{get; set;} = new List<Student>();
+        public void ListStudentOnExercise(List<Student> students)
+        {
+            Console.WriteLine($"Here is the Students on {this.ExerciseName}:");
+            foreach(Student student in students)
+        {
+            foreach(Exercise exercise in student.ExerciseList)
+            {
+                if (exercise.Equals(this))
+                {
+                    StudentList.Add(student);
+                    Console.WriteLine(student.getFullName());
+                }
+            }
+        }
+        }
+
+        internal void ListStudentOnExercise(Exercise exercise)
+        {
+            throw new NotImplementedException();
+        }
     }
-    public string ExerciseName {get; set;}
-    public string ExerciseType {get; set;}
-}
 }
