@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using StudentExercise;
+// using StudentExercise;
 
 namespace StudentExercises
 {
     class Program
     {
-        private static IEnumerable<Exercise> exercise;
-        private static IEnumerable<Student> students;
 
         static void Main(string[] args)
         {
@@ -26,6 +24,7 @@ namespace StudentExercises
             Cohort c31 = new Cohort("Cohort 31", 31);
             Cohort c30 = new Cohort("Cohort 30", 30);
             Cohort c32 = new Cohort("Cohort 32", 32);
+            Cohort c33 = new Cohort("Cohort 31", 31);
 
             //create 4 or more Students and assign them  to 1 assignment
 
@@ -43,7 +42,7 @@ namespace StudentExercises
 
 
             //add to cohort
-            Ali.Cohort = c31;
+            Ali.Cohor = c31;
             Tome.Cohor = c30;
             Jameka.Cohor = c32;
             Dek.Cohor = c31;
@@ -70,12 +69,12 @@ namespace StudentExercises
             Andy.AssignExercise(Tome, journalEntries);
 
             //create list of student
-            List<Student> studentList = new List<Student>()
+            List<Student> students = new List<Student>()
             {
                 Ali, Dek, Tome, Jameka
             };
             //create list of exercise
-            List<Exercise> exerciseList = new List<Exercise>()
+            List<Exercise> exercises = new List<Exercise>()
             {
                 documentsModel,journalEntries,documentsModel,reactExercise,
                 jsonServer,capstone, classExercise, dictionaryExercise
@@ -87,9 +86,9 @@ namespace StudentExercises
                 student.getFullNameAddExercise(student);
                 Console.WriteLine("-----------------");
 
-                foreach (Exercise exercise in exercise)
+                foreach (Exercise exercise in exercises)
                 {
-                    exercise.ListStudentOnExercise(exercise);
+                    exercise.ListStudentOnExercise(students);
                     Console.WriteLine("-----------------");
                 }
             }

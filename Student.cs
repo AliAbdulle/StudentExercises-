@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using StudentExercise;
+// using StudentExercise;
 
 namespace StudentExercises
 {
     public class Student
     {
-        internal string cohortName;
 
         public int Id { get; set; }
         public string FirstName { get; set; }

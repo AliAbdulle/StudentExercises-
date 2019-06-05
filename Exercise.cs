@@ -17,26 +17,21 @@ namespace StudentExercises
         public int Id { get; set; }
         public string ExerciseName { get; set; }
         public string ExerciseType { get; set; }
-        public List<Student> StudentList{get; set;} = new List<Student>();
+        public List<Student> StudentList { get; set; } = new List<Student>();
         public void ListStudentOnExercise(List<Student> students)
         {
             Console.WriteLine($"Here is the Students on {this.ExerciseName}:");
-            foreach(Student student in students)
-        {
-            foreach(Exercise exercise in student.ExerciseList)
+            foreach (Student student in students)
             {
-                if (exercise.Equals(this))
+                foreach (Exercise exercise in student.ExerciseList)
                 {
-                    StudentList.Add(student);
-                    Console.WriteLine(student.getFullName());
+                    if (exercise.Equals(this))
+                    {
+                        StudentList.Add(student);
+                        Console.WriteLine(student.getFullName());
+                    }
                 }
             }
-        }
-        }
-
-        internal void ListStudentOnExercise(Exercise exercise)
-        {
-            throw new NotImplementedException();
         }
     }
 }
