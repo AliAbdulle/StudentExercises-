@@ -10,14 +10,14 @@ namespace StudentExercises
         static void Main(string[] args)
         {
             // create 4, or more exercise
-            Exercise classExercise = new Exercise("Module  and condition ", "JavaScript", 1);
+            Exercise classExercise = new Exercise("Class Exercise", "JavaScript", 1);
             Exercise dictionaryExercise = new Exercise("Dictionary List", "C#", 2);
-            Exercise reactExercise = new Exercise("Componants", "Reacr", 3);
-            Exercise capstone = new Exercise("projects ", "Java", 4);
-            Exercise jsonServer = new Exercise("Store data ", "JavaScript", 5);
-            Exercise journalEntries = new Exercise("Daily write", "C#", 6);
-            Exercise sylyingSheet = new Exercise("Componants", "Reacr", 7);
-            Exercise documentsModel = new Exercise("Would check ", "Java", 8);
+            Exercise reactExercise = new Exercise("React Exercise", "React", 3);
+            Exercise capstone = new Exercise("Capstone ", "Java", 4);
+            Exercise jsonServer = new Exercise("JsonServer Data ", "JavaScript", 5);
+            Exercise journalEntries = new Exercise("Journal Entries", "C#", 6);
+            Exercise sylyingSheet = new Exercise("Sylying Sheet", "React", 7);
+            Exercise documentsModel = new Exercise("Documents Model ", "Java", 8);
 
 
             // create 3 or more cohort
@@ -29,10 +29,10 @@ namespace StudentExercises
             //create 4 or more Students and assign them  to 1 assignment
 
 
-            Student Tome = new Student("Tom", "Hall", 1);
-            Student Dek = new Student("Dek", "Abdi", 2);
-            Student Jameka = new Student("Jameka", "Echols", 3);
-            Student Ali = new Student("Ali", "Abdulle", 4);
+            Student Tome = new Student("Tom", "Hall", 0);
+            Student Dek = new Student("Dek", "Abdi", 1);
+            Student Jameka = new Student("Jameka", "Echols", 1);
+            Student Ali = new Student("Ali", "Abdulle", 1);
 
             // slack handle
             Ali.Slackhandle = "aliAbdule";
@@ -84,13 +84,8 @@ namespace StudentExercises
             foreach (Student student in students)
             {
                 student.getFullNameAddExercise(student);
-                Console.WriteLine("-----------------");
+                Console.WriteLine(" ");
 
-                foreach (Exercise exercise in exercises)
-                {
-                    exercise.ListStudentOnExercise(students);
-                    Console.WriteLine("-----------------");
-                }
             }
         }
 

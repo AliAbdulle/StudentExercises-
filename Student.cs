@@ -28,12 +28,12 @@ namespace StudentExercises
         }
         public void getFullNameAddExercise(Student student)
         {
-            Console.WriteLine($"Exercise List: {student.getFullName()}:");
+            Console.WriteLine($"Student Name: {student.getFullName()}:");
             Console.WriteLine(" ");
             foreach(Exercise exercise in student.ExerciseList)
             {
-                Console.WriteLine($"The Exercise Name: {exercise.ExerciseName}");
-                Console.WriteLine($"The Language: {exercise.ExerciseType}");
+                Console.WriteLine($"The Exercise List is working: {exercise.ExerciseName}");
+                Console.WriteLine($"The Language of the exercise: {exercise.ExerciseType}");
                 Console.WriteLine(" ");
             }
         }
